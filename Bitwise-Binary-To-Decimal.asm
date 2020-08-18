@@ -60,7 +60,7 @@ getDecimal:
 	inc ecx 
 	dec esi
 
-	cmp esi, 0 ; if zero exit loop is not recurssion 
+	cmp esi, 0 ; if zero exit loop if not use recurssion 
 	jz addOne; if the length counter is zero jump to addOne
 	jmp getDecimal ; jump to getDecemial
 
@@ -75,7 +75,7 @@ shiftAccLeft:
 	inc ecx 
 	dec esi  
 
-	cmp esi, 0 ; if zero exit loop is not recurssion 
+	cmp esi, 0 ; if zero exit loop if not jump to getDecimal 
 	jz addOne; if the length counter is zero jump to addOne
 	jmp getDecimal ; jump to getDecemial
 
