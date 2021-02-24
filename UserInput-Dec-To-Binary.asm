@@ -11,8 +11,8 @@
 ; 	    nasm -f elf64 -g -F stabs filefillter.asm -l filefillter.lst
 ;  
 ;      run:
-;           echo n | ./dectobin 
-;
+;       echo n | ./dectobin | awk '{ for(i=length;i!=0;i--)x=x substr($0,i,1);}END{print x}'   
+;	
 
 ; named initialized data here 
 section .data
